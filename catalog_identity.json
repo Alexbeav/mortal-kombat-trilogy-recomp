@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Mortal Kombat Trilogy",
+    "id": "SLUS-00330",
+    "boot_exe": "SLUS_003.30"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Mortal Kombat Trilogy (USA) (Rev 1).cue",
+    "bin_name": "Mortal Kombat Trilogy (USA) (Rev 1) (Track 01).bin",
+    "track_counts": [
+      30
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 70755216,
+      "md5": "12131037d60bdfcbc870c84b97e70a35",
+      "sha1": "aa9b7e1716bd8790bca25d651c280f7a2a48b884",
+      "crc32": "a3e7f67a"
+    },
+    "disc_fp": "485400a9e35f1fc4da5541a31e76c3b840aed7cc8cb46ddce7e1351d746204ca"
+  },
+  "exe": {
+    "load_address": "0x80100000",
+    "entry_pc": "0x8011437C",
+    "text_size": "0x00034000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 174,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

@@ -1,0 +1,44 @@
+
+[game]
+name = "Mortal Kombat Trilogy"
+id = "SLUS-00330"
+players = 1
+exe = "disc/SLUS_003.30"
+disc = "disc/Mortal Kombat Trilogy (USA) (Rev 1).cue"
+load_address = "0x80100000"
+entry_pc = "0x8011437C"
+text_size = "0x00034000"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Mortal Kombat Trilogy (USA) (Rev 1) (Track 01).bin"
+cue_name = "Mortal Kombat Trilogy (USA) (Rev 1).cue"
+boot_exe = "SLUS_003.30"
+known_sizes = [70755216, 577190208]
+known_md5 = ["12131037d60bdfcbc870c84b97e70a35", "19f1c07f6a3dace9b074deb71b5d36b0"]
+known_sha1 = ["aa9b7e1716bd8790bca25d651c280f7a2a48b884", "b1f8cf90914b65632bbb7f5494a51b9a494837a2"]
+known_crc32 = ["a3e7f67a", "2b32e271"]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Mortal Kombat Trilogy Recompiled"
+memcard_dir = "saves"
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 30
+required_disc_fp = "485400a9e35f1fc4da5541a31e76c3b840aed7cc8cb46ddce7e1351d746204ca"
